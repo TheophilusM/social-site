@@ -204,3 +204,11 @@ bg3.addEventListener('click', () => {
 
     changeBG();
 })
+
+// SWIPER JS
+var swiper = new Swiper(".mySwiper", {
+    navigation: {
+        nextEl: ".swiper-button-next",
+        prevEl: ".swiper-button-prev",
+    },
+});

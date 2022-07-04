@@ -520,7 +520,7 @@ main .container .right {
 
 
 /* ========== FRIEND REQUESTS ========== */
-.right .frend-requests {
+.right .friend-requests {
     margin-top: 1rem;
 }
 
@@ -702,6 +702,52 @@ main .container .right {
     margin-right: 1rem;
 }
 
+/* ==================== TRENDING NEWS ==================== */
+.right .trending-news {
+    margin-top: 1rem;
+    height: 280px;
+    margin-bottom: 1rem;
+    border-bottom-left-radius: var(--card-border-radius);
+    border-bottom-right-radius: var(--card-border-radius);
+}
+
+.right .trending-news h4 {
+    color: var(--color-gray);
+    margin: 1rem 0;
+}
+
+.right article {
+    background: var(--color-white);
+    padding: var(--card-padding);
+    border-radius: var(--card-border-radius);
+    margin-bottom: 0.7rem;
+}
+.right article p {
+    margin-bottom: 1.5rem;
+    font-size: 0.9rem;
+}
+
+.right article .sender {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+}
+
+.right article .sender .avatar {
+    width: 2.5rem;
+    aspect-ratio: 1/1;
+    overflow: hidden;
+}
+
+.right article .sender .avatar img {
+    width: 100%;
+    border-radius: 50%;
+}
+
+.swiper-button-next:after, .swiper-button-prev:after {
+    font-size: 0.9rem !important;
+    margin-top: 14rem;
+}
 /* ==================== MEDIA QUERIES ==================== */
 /* MEDIUM DEVICES */
 @media screen and (max-width: 1200px) {
@@ -781,3 +827,4 @@ main .container .right {
         width: 92vw;
     }
 }
+
