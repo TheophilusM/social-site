@@ -3,16 +3,21 @@
 
 /* ========== ROOT VARAIBLES ========== */
 :root {
-    --color-white: hsl(252, 30%, 100%);
+    --color-primary-hue: 252;
+    --color-light-lightness: 95%;
+    --color-dark-lightness: 17%;
+    --color-white-lightness: 100%;
+
+    --color-white: hsl(252, 30%, var(--color-white-lightness));
     --color-wheat: rgb(5, 96, 99);
-    --color-light: hsl(252, 30%, 95%);
+    --color-light: hsl(252, 30%, var(--color-light-lightness));
     --color-gray: hsl(252, 15%, 65%);
-    --color-primary: hsl(252, 75%, 60%);
+    --color-primary: hsl(var(--color-primary-hue), 75%, 60%);
     --color-secondary: hsl(252, 100%, 90%);
     --color-messages: rgb(4, 131, 4);
     --color-success: hsl(120, 95%, 65%);
     --color-danger: hsl(0, 95%, 65%);
-    --color-dark: hsl(252, 30%, 17%);
+    --color-dark: hsl(252, 30%, var(--color-dark-lightness));
     --color-black: hsl(252, 30%, 10%);
 
     --border-radius: 2rem;
@@ -620,6 +625,7 @@ main .container .right {
     width: 2.2rem;
     height: 2.2rem;
     border-radius: 50%;
+    cursor: pointer;
 }
 
 .customize-theme .choose-color span:nth-child(1) {
@@ -724,6 +730,10 @@ main .container .right {
     .left .btn {
         display: none;
     }
+
+    .customize-theme .card {
+        width: 80vw;
+    }
 }
 
 /* SMALL DEVICES */
@@ -765,5 +775,9 @@ main .container .right {
 
     main .container .right {
         display: none;
+    }
+
+    .customize-theme .card {
+        width: 92vw;
     }
 }
